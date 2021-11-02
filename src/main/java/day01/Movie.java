@@ -20,12 +20,12 @@ public class Movie {
     }
 
     public int actorsInTheirTwenties() {
-        int sum = 0;
+        int count = 0;
         for (Actor a : actors)
             if (year - a.getYearOfBirth() < 30 &&
                     year - a.getYearOfBirth() >= 20)
-                sum++;
-        return sum;
+                count++;
+        return count;
     }
 
     public static void main(String[] args) {
